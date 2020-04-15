@@ -34,6 +34,10 @@ class Song
     end
 
     def Song.find_or_create_by_name(name)
+      song = Song.find_by_name(name)
+      if song == nil
+        return Song.create_by_name(name)
+      end
     end
 
     def Song.alphabetical
