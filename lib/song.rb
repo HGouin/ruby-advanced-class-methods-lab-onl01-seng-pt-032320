@@ -45,7 +45,7 @@ class Song
       @@all.sort_by{|song| song.name}
     end
 
-    def Song.new_from_filename
+    def Song.new_from_filename(filename)
     end
 
     def Song.create_from_filename
