@@ -77,10 +77,10 @@ describe "Song Class Methods" do
 
   describe '.new_from_filename' do
     it 'initializes a song and artist_name based on the filename format' do
-      song = Song.new_from_filename("Thundercat - For Love I Come.mp3")
+      song = Song.new_from_filename("Foo Fighters - Everlong.mp3")
 
-      expect(song.name).to eq("For Love I Come")
-      expect(song.artist_name).to eq("Thundercat")
+      expect(song.name).to eq("Everlong")
+      expect(song.artist_name).to eq("Foo Fighters")
     end
   end
 
