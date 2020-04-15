@@ -50,6 +50,8 @@ class Song
       artist_name = filenamesplit[0]
       name_with_extension = filenamesplit[1]
       name = name_with_extension.split(".")[0]
+      song = Song.new_by_name(name)
+      song.artist_name
     end
 
     def Song.create_from_filename
