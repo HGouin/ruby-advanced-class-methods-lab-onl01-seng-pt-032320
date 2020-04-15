@@ -38,6 +38,7 @@ class Song
       if song == nil
         return Song.create_by_name(name)
       end
+      song
     end
 
     def Song.alphabetical
