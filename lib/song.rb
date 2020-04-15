@@ -42,7 +42,7 @@ class Song
     end
 
     def Song.alphabetical
-      @@all.sort_by{|song| song}
+      @@all.sort_by{|song| song.name}
     end
 
     def Song.new_from_filename
