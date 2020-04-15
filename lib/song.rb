@@ -48,6 +48,8 @@ class Song
     def Song.new_from_filename(filename)
       filenamesplit = filename.split(" - ")
       artist_name = filenamesplit[0]
+      name_with_extension = filenamesplit[1]
+      name = name_with_extension.split(".")[0]
     end
 
     def Song.create_from_filename
